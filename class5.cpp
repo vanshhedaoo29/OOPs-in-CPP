@@ -37,9 +37,5 @@ int main()
         s[i].getdata();
     }
 
-    for(i=0 ; i<n ; i++)
-    {
-        cout << "Data of student " << i+1 << " :\n";
-        s[i].setdata();
-    }
+    
 }
