@@ -6,21 +6,14 @@ using namespace std;
 class Y; // Forward Declaration
 class X
 {
-    private:
-    int x;
-
     public:
-    X(int t)
-    {
-        x = t;
-    }
-    friend void Y::display(X);
+    void 
 };
 
 class Y
 {
     public:
-    void display(X t)
+    void display(X& t)
     {
         cout << "x = " << t.x;
     }
@@ -28,7 +21,7 @@ class Y
 
 int main()
 {
-    X x(10);
+    X a(10);
     Y y;
-    y.display(x); // Pass the object of class X
+    y.display(a); // Pass the object of class X
 }
