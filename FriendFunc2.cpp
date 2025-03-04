@@ -1,3 +1,5 @@
+// As a Member Function of one class and Friend of Another class
+
 #include <iostream>
 using namespace std;
 
