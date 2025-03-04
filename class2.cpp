@@ -12,11 +12,6 @@ class student
             cout << "Roll No. : " << roll_no ;
             cout << "\nName : " << name ;
         }
-
-        void faltu()
-        {
-            cout << "\nVansh is mad ";
-        }
     };
 
 int main()
