@@ -1,19 +1,20 @@
-// As a member function of one class and friend of another class
-
 #include <iostream>
 using namespace std;
 
 class Y; // Forward Declaration
 class X
 {
-    public:
-    void 
+    int x; // Member variable declaration
+
+public:
+    X(int val) : x(val) {} // Constructor
+    friend class Y; // Declare Y as a friend
 };
 
 class Y
 {
-    public:
-    void display(X& t)
+public:
+    void display(X t)
     {
         cout << "x = " << t.x;
     }
