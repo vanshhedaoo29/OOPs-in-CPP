@@ -1,5 +1,3 @@
-// Single Level Inheritance
-
 #include <iostream>
 using namespace std;
 
@@ -13,7 +11,8 @@ class Person
     void Set_P()
     {
         cout << "Enter Name : ";
-        cin >> name;
+        getline(cin, name);  // Read full name including spaces
+
         cout << "Enter Age : ";
         cin >> age;
     }
@@ -27,15 +26,16 @@ class Person
 
 class Student : private Person
 {
-        private:
-        string course;
+    private:
+    string course;
 
-        public:
-        void Set_S()
+    public:
+    void Set_S()
     {
         Set_P();
         cout << "Enter Course : ";
-        cin >> course;
+        cin.ignore();    // Ignore any leftover newline character
+        getline(cin, course);  // Read full course name including spaces
     }
 
     void Put_S()
@@ -43,7 +43,6 @@ class Student : private Person
         Put_P();
         cout << "\nCourse : " << course;
     }
-
 };
 
 int main()
