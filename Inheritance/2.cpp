@@ -19,11 +19,12 @@ class Student : private Person
     void Set_S()
     {
         cout << "Enter Name : ";
-        cin >> name;
+        getline(cin, name);          // Read full name including spaces
         cout << "Enter Age : ";
         cin >> age;
         cout << "Enter Course : ";
-        cin >> course;
+        cin.ignore();    // Ignore any leftover newline character
+        getline(cin, course);  // Read full course name including spaces
     }
 
     void Put_S()
