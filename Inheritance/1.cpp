@@ -1,3 +1,8 @@
+/*getline is used when we have to input string with spaces
+  cin.ignore() is used when we have another input before it 
+  as in case of input name it is the first input so we have not used cin.ignore()
+  but in case of input course it is the 3rd input so we have to use cin.ignore() for proper input*/
+
 #include <iostream>
 using namespace std;
 
