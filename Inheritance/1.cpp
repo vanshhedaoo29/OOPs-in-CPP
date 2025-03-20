@@ -3,6 +3,8 @@
   as in case of input name it is the first input so we have not used cin.ignore()
   but in case of input course it is the 3rd input so we have to use cin.ignore() for proper input*/
 
+// Single Level Inheritance Example 1
+
 #include <iostream>
 using namespace std;
 
