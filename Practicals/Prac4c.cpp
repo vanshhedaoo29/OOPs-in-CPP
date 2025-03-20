@@ -14,6 +14,8 @@ int main()
     cout << "Enter Second No. : ";
     cin >> num2;
 
+    cout << num1 << " ";
+
     int i=1;
     do 
     {
@@ -22,5 +24,7 @@ int main()
         sum = num1 + num2;
         cout << sum << " ";
         i++;
-    }while(i<=n);
+    }while(i<=n-1);
+
+    return 0;
 }

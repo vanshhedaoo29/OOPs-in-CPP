@@ -1,4 +1,4 @@
-// Multi Level Inheritance with Public Mode Example 1
+// Multi Level Inheritance with Protected Mode Example 1
 
 #include <iostream>
 using namespace std;
@@ -26,12 +26,12 @@ class A
     }
 };
 
-class B : public A
+class B : protected A
 {
     
 };
 
-class C : public B
+class C : protected B
 {
     public:
     void Set_XYZ()
@@ -54,7 +54,11 @@ class C : public B
 
 int main()
 {
-    C s;
-    s.Set_XYZ();
-    s.Put_XYZ();
+    C obj;
+    obj.Set_XYZ();
+
+    cout << "Information :\n";
+    obj.Put_XYZ();
+
+    return 0;
 }
