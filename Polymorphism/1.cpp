@@ -16,8 +16,8 @@ int main()
     // Correct function calls
     display();
     display(10);
-    display(15.5f);  // Use 'f' to explicitly declare float
-    display(20, 30.5f);
+    display(15.5F);  // Use 'f' to explicitly declare float
+    display(20, 30.5F);
 
     return 0;
 }
