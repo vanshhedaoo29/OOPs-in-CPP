@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-class Distanceop
+class Distance
 {
 private:
     int foot;
@@ -25,9 +25,9 @@ public:
         cout << foot << " feet " << inch << " inches" << endl;
     }
 
-    Distanceop operator+(Distanceop t)
+    Distance operator+(Distance t)
     {
-        Distanceop a;
+        Distance a;
         a.foot = foot + t.foot;
         a.inch = inch + t.inch;
 
@@ -44,7 +44,7 @@ public:
 
 int main()
 {
-    Distanceop c1, c2, c3;
+    Distance c1, c2, c3;
 
     cout << "Enter Data for c1:\n";
     c1.Set();
