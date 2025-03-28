@@ -1,15 +1,15 @@
 // Static / Compile time Polymorphism
 
-// Program for Static Operator Overloading for Distance Number
+// Program for Static Operator Overloading for Distance 
 
 #include <iostream>
 using namespace std;
 
-class Distance
+class Distanceop
 {
 private:
     int foot;
-    float inch;
+    int inch;
 
 public:
     void Set()
@@ -25,9 +25,9 @@ public:
         cout << foot << " feet " << inch << " inches" << endl;
     }
 
-    Distance operator+(Distance t)
+    Distanceop operator+(Distanceop t)
     {
-        Distance a;
+        Distanceop a;
         a.foot = foot + t.foot;
         a.inch = inch + t.inch;
 
@@ -44,7 +44,7 @@ public:
 
 int main()
 {
-    Distance c1, c2, c3;
+    Distanceop c1, c2, c3;
 
     cout << "Enter Data for c1:\n";
     c1.Set();
@@ -61,7 +61,7 @@ int main()
     cout << "Data for c2: ";
     c2.Put();
 
-    cout << "Data for c3 (sum): ";
+    cout << "Data for c3 : ";
     c3.Put();
 
     return 0;
