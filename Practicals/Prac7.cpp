@@ -29,7 +29,7 @@ int main()
     int n, i;
     Student s[10];
 
-    cout << "Enter the number of students : ";
+    cout << "Enter no. of students : ";
     cin >> n;
 
     for (i = 0; i < n; i++)
